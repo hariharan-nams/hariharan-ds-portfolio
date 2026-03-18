@@ -4,114 +4,217 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hariharan | Aspiring Data Scientist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav class="navbar">
-    <div class="container nav-wrap">
-      <h2 class="logo">Hariharan</h2>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <header class="hero">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <p class="tag">Aspiring Data Scientist</p>
-        <h1>Hello, I'm <span>Hariharan</span></h1>
-        <p>
-          I am passionate about Python, data analysis, machine learning,
-          SQL, and dashboard building. I enjoy turning raw data into useful insights.
-        </p>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn primary-btn">View Projects</a>
-          <a href="resume/Hariharan_Resume.pdf" target="_blank" class="btn secondary-btn">Download Resume</a>
-        </div>
-      </div>
-
-      <div class="hero-card">
-        <div class="profile-circle">H</div>
-        <h3>Aspiring Data Scientist</h3>
-        <p>Python • SQL • Pandas • Power BI • Machine Learning</p>
-      </div>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="#home" class="logo">Hari<span>haran</span></a>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      </nav>
     </div>
   </header>
 
-  <section id="about" class="section">
-    <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <div class="card">
-        <p>
-          I am currently learning data science with focus on data cleaning,
-          preprocessing, exploratory data analysis, visualization, and machine learning.
-          My goal is to build strong practical skills through real-world projects.
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Aspiring Data Scientist</p>
+          <h1>Building data skills and turning <span>ideas into projects</span>.</h1>
+          <p class="hero-text">
+            Hi, I'm Hariharan. I am learning data analysis, machine learning, SQL, Python, and visualization by building practical projects and improving step by step.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="resume.pdf" class="btn btn-secondary" target="_blank">Download Resume</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/hariharan-nams" target="_blank">LinkedIn</a>
+            <a href="mailto:hariharannams@gmail.com">Email Me</a>
+          </div>
+          <div class="hero-highlights">
+            <div class="highlight-card">
+              <h3>Python</h3>
+              <p>Data cleaning and analysis</p>
+            </div>
+            <div class="highlight-card">
+              <h3>SQL</h3>
+              <p>Querying structured data</p>
+            </div>
+            <div class="highlight-card">
+              <h3>Power BI</h3>
+              <p>Dashboard storytelling</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-panel reveal">
+          <div class="profile-image-wrapper">
+            <img src="profile.jpg" alt="Hariharan profile photo" class="profile-image" />
+          </div>
+          <h2>Hariharan</h2>
+          <p class="role"><span id="typing-text">Aspiring Data Scientist</span></p>
+          <div class="mini-list">
+            <div class="mini-item">
+              <div class="mini-icon">01</div>
+              <div>
+                <strong>Learning by Doing</strong>
+                <p>Building simple, practical projects to strengthen fundamentals.</p>
+              </div>
+            </div>
+            <div class="mini-item">
+              <div class="mini-icon">02</div>
+              <div>
+                <strong>Analytics Mindset</strong>
+                <p>Interested in business insights, dashboards, and data-driven decisions.</p>
+              </div>
+            </div>
+            <div class="mini-item">
+              <div class="mini-icon">03</div>
+              <div>
+                <strong>Career Goal</strong>
+                <p>Growing toward a professional role in data science or analytics.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <div class="container narrow">
+        <p class="section-tag">About</p>
+        <h2 class="section-title">A focused learner building a strong foundation in data.</h2>
+        <p class="section-subtitle">
+          I am currently developing my skills in Python, SQL, data preprocessing, visualization, and machine learning. My focus is on understanding concepts clearly and applying them through hands-on projects.
         </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="skills" class="section">
-    <div class="container">
-      <h2 class="section-title">Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">Python</div>
-        <div class="skill-card">Pandas</div>
-        <div class="skill-card">NumPy</div>
-        <div class="skill-card">SQL</div>
-        <div class="skill-card">Machine Learning</div>
-        <div class="skill-card">Power BI</div>
-        <div class="skill-card">Excel</div>
-        <div class="skill-card">Data Visualization</div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="section">
-    <div class="container">
-      <h2 class="section-title">Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <img src="assets/images/project1.png" alt="Sales Data Analysis" class="project-image">
-          <h3>Sales Data Analysis</h3>
-          <p>Exploratory data analysis using Python and Pandas to find business insights and trends.</p>
-          <a href="projects/project1/index.html" class="project-link">View Project</a>
-        </div>
-
-        <div class="project-card">
-          <img src="assets/images/project2.png" alt="Student Performance Prediction" class="project-image">
-          <h3>Student Performance Prediction</h3>
-          <p>Machine learning project to predict student performance using cleaned and processed data.</p>
-          <a href="projects/project2/index.html" class="project-link">View Project</a>
-        </div>
-
-        <div class="project-card">
-          <img src="assets/images/project3.png" alt="Power BI Dashboard" class="project-image">
-          <h3>Power BI Dashboard</h3>
-          <p>Interactive dashboard for KPIs, performance tracking, and monthly analysis.</p>
-          <a href="projects/project3/index.html" class="project-link">View Project</a>
+    <section id="skills" class="section reveal">
+      <div class="container">
+        <p class="section-tag">Skills</p>
+        <h2 class="section-title">Tools and technologies I am learning.</h2>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Python</h3>
+            <p>Using Python for analysis, data handling, and beginner ML workflows.</p>
+          </article>
+          <article class="skill-card">
+            <h3>SQL</h3>
+            <p>Writing queries to retrieve, filter, and summarize data effectively.</p>
+          </article>
+          <article class="skill-card">
+            <h3>Pandas & NumPy</h3>
+            <p>Cleaning data, handling missing values, and performing calculations.</p>
+          </article>
+          <article class="skill-card">
+            <h3>Machine Learning</h3>
+            <p>Learning preprocessing, model building, and evaluation basics.</p>
+          </article>
+          <article class="skill-card">
+            <h3>Power BI</h3>
+            <p>Creating clear dashboards and simple business visualizations.</p>
+          </article>
+          <article class="skill-card">
+            <h3>Excel</h3>
+            <p>Using formulas, reports, and structured analysis for practical tasks.</p>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class="section">
-    <div class="container">
-      <h2 class="section-title">Contact</h2>
-      <div class="contact-box">
-        <p>Email: <a href="mailto:yourmail@example.com">yourmail@example.com</a></p>
-        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+    <section id="projects" class="section reveal">
+      <div class="container">
+        <p class="section-tag">Projects</p>
+        <h2 class="section-title">Selected work for my portfolio.</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-number">01</span>
+              <span class="project-badge">Data Analysis</span>
+            </div>
+            <h3>Sales Data Analysis</h3>
+            <p>Analyzed sales records to identify trends, top categories, and useful insights through Python-based analysis.</p>
+            <div class="tech-stack">
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>Matplotlib</span>
+            </div>
+            <a href="https://github.com/yourusername/sales-data-analysis" target="_blank" class="project-link">View Project →</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-number">02</span>
+              <span class="project-badge">Machine Learning</span>
+            </div>
+            <h3>Student Performance Prediction</h3>
+            <p>Built a beginner ML project using preprocessing and classification techniques to predict outcomes.</p>
+            <div class="tech-stack">
+              <span>Python</span>
+              <span>scikit-learn</span>
+              <span>EDA</span>
+            </div>
+            <a href="https://github.com/yourusername/student-performance-prediction" target="_blank" class="project-link">View Project →</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-number">03</span>
+              <span class="project-badge">Dashboard</span>
+            </div>
+            <h3>Power BI Dashboard</h3>
+            <p>Designed an interactive dashboard to present KPIs and easy-to-read business insights.</p>
+            <div class="tech-stack">
+              <span>Power BI</span>
+              <span>Excel</span>
+              <span>Visualization</span>
+            </div>
+            <a href="https://github.com/yourusername/powerbi-dashboard" target="_blank" class="project-link">View Project →</a>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="footer">
-    <p>© 2026 Hariharan | Aspiring Data Scientist Portfolio</p>
+    <section id="contact" class="section reveal">
+      <div class="container">
+        <p class="section-tag">Contact</p>
+        <h2 class="section-title">Let's connect.</h2>
+        <div class="contact-box">
+          <div class="contact-item">
+            <h4>Email</h4>
+            <p>hariharannams@gmail.com</p>
+          </div>
+          <div class="contact-item">
+            <h4>GitHub</h4>
+            <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>
+          </div>
+          <div class="contact-item">
+            <h4>Location</h4>
+            <p>India</p>
+          </div>
+          <div class="contact-item">
+            <h4>LinkedIn</h4>
+            <a href="https://linkedin.com/in/hariharan-nams" target="_blank">linkedin.com/in/hariharan-nams</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Hariharan | Built for GitHub Pages</p>
   </footer>
 
   <script src="script.js"></script>
