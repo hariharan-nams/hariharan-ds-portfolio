@@ -1,8 +1,14 @@
+// ============================
+// Select Elements
+// ============================
 const revealElements = document.querySelectorAll(".reveal");
 const themeToggle = document.getElementById("theme-toggle");
 const typingText = document.getElementById("typing-text");
 
-// Reveal on scroll
+
+// ============================
+// Reveal on Scroll (Improved)
+// ============================
 function revealOnScroll() {
   const windowHeight = window.innerHeight;
   const visiblePoint = 120;
@@ -16,10 +22,14 @@ function revealOnScroll() {
   });
 }
 
+// Run on load + scroll
+window.addEventListener("DOMContentLoaded", revealOnScroll);
 window.addEventListener("scroll", revealOnScroll);
-window.addEventListener("load", revealOnScroll);
 
-// Theme toggle with memory
+
+// ============================
+// Theme Toggle (with memory)
+// ============================
 if (themeToggle) {
   const savedTheme = localStorage.getItem("theme");
 
@@ -40,10 +50,13 @@ if (themeToggle) {
   });
 }
 
-// Typing effect
+
+// ============================
+// Typing Effect (Improved)
+// ============================
 const words = [
   "Aspiring Data Scientist",
-  "Python Learner",
+  "Python Developer",
   "Data Analyst",
   "Machine Learning Enthusiast"
 ];
@@ -63,7 +76,7 @@ function typeEffect() {
 
     if (charIndex > currentWord.length) {
       isDeleting = true;
-      setTimeout(typeEffect, 1200);
+      setTimeout(typeEffect, 1200); // pause before deleting
       return;
     }
   } else {
@@ -75,7 +88,8 @@ function typeEffect() {
     }
   }
 
-  setTimeout(typeEffect, isDeleting ? 40 : 90);
+  setTimeout(typeEffect, isDeleting ? 40 : 80);
 }
 
+// Start typing
 typeEffect();
