@@ -518,13 +518,30 @@ a {
 
 /* Skills cards grid */
 .skills-grid {
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;              /* space BETWEEN cards */
+  padding: 50px;          /* space around grid (inside container) */
+}
+
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Projects cards grid */
 .projects-grid {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   align-items: stretch;
+  padding: 50px;
 }
 
 /* =========================
@@ -647,7 +664,10 @@ a {
   max-width: 1100px;
   margin: 36px auto 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(2, auto);   /* 2 rows */
+
   gap: 24px;
 }
 
