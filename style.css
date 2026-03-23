@@ -350,6 +350,7 @@ a {
 
 .projects-grid {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  align-items: stretch;
 }
 
 .skill-card,
@@ -368,9 +369,17 @@ a {
   transition: 0.25s ease;
 }
 
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
 .skill-card:hover,
 .project-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 50px rgba(99, 179, 255, 0.15);
 }
 
 .skill-card h3,
@@ -383,6 +392,10 @@ a {
 .project-card p {
   color: var(--muted);
   font-size: 0.96rem;
+}
+
+.project-card p {
+  flex-grow: 1;
 }
 
 .project-header {
@@ -430,6 +443,7 @@ a {
 .project-link {
   color: var(--accent);
   font-weight: 600;
+  margin-top: auto;
 }
 
 .contact-box {
